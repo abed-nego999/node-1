@@ -1,9 +1,17 @@
 const express = require('express')
+const mongoose = require('mongoose')
+const properties = require('./properties/properties');
 const app = express()
 const port = process.env.PORT || 3000
-
-app.get('/', (req, res) => res.send('GET: Hello World!'))
-app.post('/', (req, res) => res.send('POST: Hello World!'))
+const router = express.Router();
 
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+
+mongoose.connect("mongodb+srv://cluster0-f3avm.mongodb.net/test?authSource=admin",
+  properties.mongoDBConnection,
+  (err, res) => {
+    if (err) {
+      console.log(`ERROR: connecting to Database. ${ err }`);
+    }
+    app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+  });
