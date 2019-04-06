@@ -1,0 +1,23 @@
+{
+  "name": "node-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abed-nego999/node-1.git"
+  },
+  "author": "Esteban Saugar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abed-nego999/node-1/issues"
+  },
+  "homepage": "https://github.com/abed-nego999/node-1#readme"
+}
